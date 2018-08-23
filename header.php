@@ -9,13 +9,16 @@
   <header>
     <h1>
       <a href="index.html">
-         <img src="images/logo.gif" width="258" height="64" alt="日本の景色写真展">
+				<?php
+				 $custom_logo_id = get_theme_mod( 'custom_logo' );
+				 $image = wp_get_attachment_image_src( $custom_logo_id, 'full' );
+				 $format  = '<img';
+				 $format .=' src="'    .$image[0] . '"';
+				 $format .=' width="'  .$image[1] . '"';
+				 $format .=' height="' .$image[2] . '"';
+				 $format .=' alt="'    .get_bloginfo( 'name' ) . '">';
+				 echo $format;
+			 ?>
       </a>
     </h1>
   </header>
-  <nav>
-
-  </nav>
-
-</body>
-</html>
