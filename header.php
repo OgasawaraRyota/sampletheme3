@@ -22,3 +22,11 @@
       </a>
     </h1>
   </header>
+<nav class="nav-global">
+	<?php
+		wp_nav_menu( array(
+			'theme_location' => 'primary2'
+		)
+	);
+		?>
+</nav>
