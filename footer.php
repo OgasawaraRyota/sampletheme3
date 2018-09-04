@@ -1,4 +1,6 @@
-  <footer>
+</div>
+
+	<footer>
     <p class="pagetop">
       <a href="#top">ページの先頭へ戻る</a>
     </p>
