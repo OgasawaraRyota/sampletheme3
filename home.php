@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-
   <nav id="pickup_field">
     <ul>
      <li class="now">
