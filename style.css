@@ -38,19 +38,19 @@ nav ul {
 }
 
 .nav-global ul li:nth-child(1) a {
-  background-image: url(../images/btn_navigation1.png);
+  background-image: url(images/btn_navigation1.png);
 }
 
 .nav-global ul li:nth-child(2) a {
-  background-image: url(../images/btn_navigation2.png);
+  background-image: url(images/btn_navigation2.png);
 }
 
 .nav-global ul li:nth-child(3) a {
-  background-image: url(../images/btn_navigation3.png);
+  background-image: url(images/btn_navigation3.png);
 }
 
 .nav-global ul li:nth-child(4) a {
-  background-image: url(../images/btn_navigation4.png);
+  background-image: url(images/btn_navigation4.png);
 }
 
 main {
