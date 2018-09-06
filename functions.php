@@ -8,18 +8,17 @@
  *
  */
 function theme_setup() {
-add_theme_support( 'custom-logo' );
-add_theme_support( 'title-tag' );
-add_theme_support( 'post-thumbnails' );
-}
+	add_theme_support( 'custom-logo' );
+	add_theme_support( 'title-tag' );
+	add_theme_support( 'post-thumbnails' );
+
 	register_nav_menus(
 		array(
 			'primary2'=> 'Primary Menu2'
 		)
 	);
+}
 add_action( 'after_setup_theme', 'theme_setup');
-
-
 
 /**
  *ウィジェット
@@ -67,6 +66,6 @@ add_action( 'wp_enqueue_scripts', 'theme_styles' );
  */
 function theme_scripts() {
 	wp_enqueue_style( 'theme_style',  get_stylesheet_uri() );
-	wp_enqueue_script( 'theme_common', get_template_directory_uri() . '/js/slideshow.js' );
+	wp_enqueue_script( 'slideshow', get_template_directory_uri() . '/js/slideshow.js' );
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
